@@ -5,7 +5,7 @@ from django.conf import settings
 from django.core import management
 from django.test.runner import DiscoverRunner
 
-if sys.argv[1] == "test":
+if len(sys.argv) > 1 and sys.argv[1] == "test":
     # patch DiscoverRunner setup database to be able to create
     # dynamo db on startup
     original_setup_database = DiscoverRunner.setup_databases
