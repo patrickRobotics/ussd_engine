@@ -33,10 +33,10 @@ def reqs(*f):
     return [req for subreq in _reqs(*f) for req in subreq]
 
 setup(
-    name='ussd_airflow',
+    name='ussd_airflow_v6',
     version=VERSION,
-    packages=find_packages(exclude=('ussd_airflow',)),
-    url='https://github.com/mwaaas/ussd_airflow',
+    packages=find_packages(exclude=('ussd_airflow_v6',)),
+    url='https://github.com/ussd_airflow/ussd_airflow',
     install_requires=reqs('default.txt'),
     include_package_data=True,
     license='MIT',
