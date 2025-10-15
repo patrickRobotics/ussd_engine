@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 import os
-from ussd import VERSION
+from ussd import "0.1.0"
 
 
 def _strip_comments(l):
