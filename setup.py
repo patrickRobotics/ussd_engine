@@ -33,9 +33,9 @@ def reqs(*f):
     return [req for subreq in _reqs(*f) for req in subreq]
 
 setup(
-    name='ussd_airflow_v6',
+    name='ussd_airflow',
     version=VERSION,
-    packages=find_packages(exclude=('ussd_airflow_v6',)),
+    packages=find_packages(),
     url='https://github.com/ussd_airflow/ussd_airflow',
     install_requires=reqs('default.txt'),
     include_package_data=True,
